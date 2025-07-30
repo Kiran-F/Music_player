@@ -22,16 +22,14 @@ main{
 #left{
     height: 100%;
     width: 40%;
-    /* margin-right: 100px; */
     background-color: #333;
-    background-image: url(https://t2.genius.com/unsafe/387x387/https%3A%2F%2Fimages.genius.com%2F062892bc65c09b8e845619e8e391b7ce.1000x563x1.jpg);
+    /* background-image: url(https://t2.genius.com/unsafe/387x387/https%3A%2F%2Fimages.genius.com%2F062892bc65c09b8e845619e8e391b7ce.1000x563x1.jpg); */
     background-size: cover;
     border-radius: 20px;
 }
 #right{
     width: 60%;
     height: 100%;
-    /* background-color: #663399; */
     padding: 0 2vw;
 }
 
@@ -90,6 +88,10 @@ main{
     width: 65px;
     height: 65px;
     border-radius: 5px;
+    object-fit: cover;
+}
+ .duration, .part1{ /*so that event isn't triggered on clicking them */
+    pointer-events: none;
 }
 
 /* Player */
